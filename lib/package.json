@@ -3,8 +3,8 @@
     "l": "npm link"
   },
   "version": "0.1.0",
-  "name": "custom-form-select",
-  "description": "custom select to use in forms",
+  "name": "react-monster-select",
+  "description": "Custom select to use in React SPA Apps",
   "author": "Skolozub <sidorovalpha@gmail.com>",
   "main": "index.js",
   "license": "ISC",
