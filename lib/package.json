@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "l": "npm link"
+  },
+  "version": "0.1.0",
+  "name": "custom-form-select",
+  "description": "custom select to use in forms",
+  "author": "Skolozub <sidorovalpha@gmail.com>",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Skolozub/custom-form-select",
+  "bugs": {
+    "url": "https://github.com/Skolozub/custom-form-select/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skolozub/custom-form-select.git"
+  },
+  "dependencies": {
+    "filter-invalid-dom-props": "^2.0.0",
+    "react-scrollbars-custom": "^4.0.21",
+    "classnames": "^2.2.6",
+    "styled-components": "^5.0.1"
+  }
+}

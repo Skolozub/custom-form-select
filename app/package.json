@@ -1,0 +1,52 @@
+{
+  "scripts": {
+    "i": "yarn install",
+    "build": "webpack --config lib.config.js",
+    "styling": "stylelint src/**/*.sc.js",
+    "eslinting": "eslint --ext .js,.jsx src --fix",
+    "babeling": "babel src --out-dir ../lib --copy-files",
+    "lib": "yarn styling && yarn eslinting && yarn babeling"
+  },
+  "name": "custom-form-select-source",
+  "author": "Skolozub <sidorovalpha@gmail.com>",
+  "main": "./src/index.js",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-compat": "^3.5.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "eslint-plugin-simple-import-sort": "^5.0.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-is": "^16.12.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "filter-invalid-dom-props": "^2.0.0",
+    "react-scrollbars-custom": "^4.0.21",
+    "styled-components": "^5.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
