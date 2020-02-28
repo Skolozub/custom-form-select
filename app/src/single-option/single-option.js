@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -25,7 +26,7 @@ function SingleOption(props) {
   return (
     <OptionWrapper key={ key } className={ className } style={ style } onClick={ handleClick }>
       <Option
-        className="custom-select__option"
+        className={ cn('custom-select__option', { isChecked }) }
         height={ optionHeight }
         htmlFor={ id }
         isChecked={ isChecked }
