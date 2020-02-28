@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "l": "npm link"
+    "l": "yarn link",
+    "p": "yarn publish"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "react-monster-select",
   "description": "Custom select to use in React SPA Apps",
   "author": "Skolozub <sidorovalpha@gmail.com>",

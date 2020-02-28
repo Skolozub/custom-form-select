@@ -19,7 +19,13 @@ function SelectButton(props) {
 
   return (
     <ButtonWrapper
-      className={ cn('custom-select__open-button', className) }
+      className={ cn(
+        'custom-select__open-button',
+        className,
+        { isError },
+        { isOpened },
+        { isDisabled },
+      ) }
       isDisabled={ isDisabled }
       isError={ isError }
       isOpened={ isOpened }
