@@ -3,7 +3,7 @@
     "l": "yarn link",
     "p": "yarn publish"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "react-monster-select",
   "description": "Custom select to use in React SPA Apps",
   "author": "Skolozub <sidorovalpha@gmail.com>",
