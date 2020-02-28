@@ -3,7 +3,7 @@
     "l": "yarn link",
     "p": "yarn publish"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "react-monster-select",
   "description": "Custom select to use in React SPA Apps",
   "author": "Skolozub <sidorovalpha@gmail.com>",
@@ -18,9 +18,9 @@
     "url": "git+https://github.com/Skolozub/custom-form-select.git"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "filter-invalid-dom-props": "^2.0.0",
     "react-scrollbars-custom": "^4.0.21",
-    "classnames": "^2.2.6",
     "styled-components": "^5.0.1"
   }
 }
