@@ -13,6 +13,7 @@ function SelectButton(props) {
     isLoading,
     isError,
     isDisabled,
+    isValid,
     handleToggle,
     iconComponent = () => {},
   } = props
@@ -22,13 +23,15 @@ function SelectButton(props) {
       className={ cn(
         'custom-select__open-button',
         className,
-        { isError },
         { isOpened },
+        { isValid },
+        { isError },
         { isDisabled },
       ) }
       isDisabled={ isDisabled }
       isError={ isError }
       isOpened={ isOpened }
+      isValid={ isValid }
       style={ style }
       onClick={ handleToggle }
     >
@@ -47,6 +50,7 @@ SelectButton.propTypes = {
   style           : PropTypes.object,
   activeOptionText: PropTypes.string,
   isOpened        : PropTypes.bool,
+  isValid         : PropTypes.bool,
   isError         : PropTypes.bool,
   isDisabled      : PropTypes.bool,
   isLoading       : PropTypes.bool,
@@ -59,6 +63,7 @@ SelectButton.defaultProps = {
   style           : {},
   activeOptionText: '',
   isOpened        : false,
+  isValid         : false,
   isError         : false,
   isDisabled      : false,
   isLoading       : false,
