@@ -41,6 +41,8 @@ function CustomFormSelect(props) {
           isValid,
           isError,
           isDisabled,
+          handleOpen      : state.methods.open,
+          handleClose     : state.methods.close,
           handleToggle    : state.methods.toggle,
           iconComponent   : SelectArrow,
         })}

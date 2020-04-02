@@ -19,10 +19,6 @@ function SingleOption(props) {
     handleChange,
   } = props
 
-  function changeValueHandler(event) {
-    handleChange(event.currentTarget.value)
-  }
-
   return (
     <OptionWrapper key={ key } className={ className } style={ style } onClick={ handleClick }>
       <Option
@@ -37,7 +33,7 @@ function SingleOption(props) {
           name={ name }
           type="radio"
           value={ value }
-          onChange={ changeValueHandler }
+          onChange={ handleChange }
         />
         {text}
       </Option>
